@@ -5,7 +5,7 @@ import requests     #웹 소스를 열어서 읽을수 있게해줌
 from bs4 import BeautifulSoup
 import time
 import json
-access_token="rL2RE0AiEciP6Whmu3QN1JUS6jwAJjhMk3jn5wo9cpcAAAFxPkWA3g"
+access_token="-"
 def send_to_kakao(text):
     header = {"Authorization": 'Bearer ' + access_token}
     url="https://kapi.kakao.com/v2/api/talk/memo/default/send"
