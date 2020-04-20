@@ -26,7 +26,7 @@ def search():
     bs=BeautifulSoup(r.content,'lxml')
     divs=bs.select("ul.newsbox_texts") #select의 결과는 list이다
     for x in divs:
-        if "서울" in str(x) and "코로나" in str(x): #"경산" in str(x) and "코로나" in str(x) and "확진" in str(x):
+        if "코로나" in str(x) and "경산" in str(x) and "확진" in str(x):
             a=[]
             a.append(str(x))
             if count==0:
